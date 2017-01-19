@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+  <title>littleBits API</title>
+  
+  <!-- https://jquery.com  -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <!-- Our Javascript code for this page -->  
+  <script type="text/javascript" src="littleBits.js"></script>
+  <!-- css -->  
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div id="mainDiv">
+  <h1><img src="https://cdn.gomix.com/9f67720d-ad82-43b1-a7a5-2edc81e35b48%2FlittleBits.svg" /></h1>
+  
+  <!-- drop-down menu to select a device -->
+  <form>
+    <p>Device: 
+    <select id="deviceSelect">
+    <option value="" selected="selected">Select CloudBit Device</option>
+    </select></p>
+  </form>
+  
+  <!-- Show the status of the device -->
+  <div id="appDiv">
+    <div id="OnDiv" class="hidden On"><p><b>Device ON!</b></p><img width="225px" src="https://cdn.gomix.com/9f67720d-ad82-43b1-a7a5-2edc81e35b48%2FbuttonDown.png" /></div>
+    <div id="OffDiv" class="hidden Off"><p><b>Device off</b></p><img width="225px" src="https://cdn.gomix.com/9f67720d-ad82-43b1-a7a5-2edc81e35b48%2FbuttonUp.png" /></div>
+    <div id="UnknownDiv" class="hidden Unknown"><p>Press a button on your CloudBit</p><p><b>Device status not yet known</b></p></div>
+    <div id="SelectionDiv" class="Unknown"><b>Please select a device</b></div>
+  </div>
+</div> 
+
+<br />
+<hr />
+<p>
+  <a href="https://gomix.com/#!/remix/littlebits-api/9f67720d-ad82-43b1-a7a5-2edc81e35b48"><img src="https://gomix.com/images/background-light/remix-on-gomix.svg"></a>
+</p>
+<p>
+  <a href="https://gomix.com/#!/project/littlebits-api">View Code</a>
+</p>
+
+</body>
+</html>
